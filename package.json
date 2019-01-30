@@ -4,7 +4,9 @@
   "description": "ui component with react",
   "main": "build/index.js",
   "scripts": {
+    "start": "babel lib -w -d build  -s",
     "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build"
@@ -36,11 +38,13 @@
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-watch": "^4.0.2",
-    "polished": "^2.3.3",
+    "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "styled-components": "^4.1.3"
+    "react-dom": "^16.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "polished": "^2.3.3",
+    "styled-components": "^4.1.3"
+  }
 }
